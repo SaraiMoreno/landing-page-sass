@@ -1,0 +1,318 @@
+$primary-color:#FFEFE7;
+$secundary-color:#FFDAC6;
+$tertiary-color:#BABD8D;
+$quaternoon-color:#FA9500;
+$primary-text-color:#7C6A0A;
+$font-stack:'IBM Plex Sans',sans-serif;
+$max-width:1200px;
+
+@mixin flexCenter($direction, $content, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $primary-color;
+    font-family: $font-stack;
+    box-sizing: border-box;       
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.main-container{
+    width: 100%;
+    max-width: $max-width;
+    min-width: 320px;
+    margin: 0 auto;    
+    padding: 20px;
+    box-sizing: inherit;
+}
+
+nav{
+    height: 51px;
+    @include flexCenter(row,space-between ,center );
+    span{
+        margin-left: 20px;
+        align-self: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.0rem;
+        color: $primary-text-color;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: end;
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;    
+            svg{
+                stroke: $primary-text-color
+            }
+        }
+
+    }
+}
+
+
+
+article{    
+    @include flexCenter(column,center ,center );
+    color: $primary-text-color;
+    margin: 40px 0;
+   
+
+    .impact-section-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 3.6rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-weight: 400;
+        }
+
+        button{
+            width: 150px;
+            background:$quaternoon-color ;
+            padding: 12px;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 35px;
+            align-self:  center;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .impact-section-image {
+       order: -1;
+       width: 100%;
+       height: 40vh;
+       text-align: center;
+
+       img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;        
+        border-radius: 10px;
+       }
+
+    
+    }
+
+}/** fin article*/
+
+
+section{
+    h2{
+        color: $primary-text-color;
+        font-size: 2.2rem;
+        line-height: 2.1rem;
+        font-weight: 500;
+    }
+
+    .healthCare-section{
+        width: 100%;
+        min-width: 300px;
+    
+        .card-section{
+            width: 100%;
+            height: 420px;
+            @include flexCenter(row,inherit ,inherit );
+            overflow-x: scroll;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x proximity;        
+            column-gap: 40px;
+          }
+
+          .product-card{
+            width: 70%;
+            max-width :178px ;
+            min-width: 178px;
+            height: 320px;
+            border-radius: 6px;      
+            @include flexCenter(column,inherit ,inherit );
+            background-color: $secundary-color;
+            text-align: center;
+            padding: 4px;
+            scroll-snap-align: center;
+            box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);              
+            transition: transform 0.2s;
+
+            .product-card-info{
+                text-align: start;
+                padding: 0 20px; 
+                img{
+                    width: 100%;
+                    height:35vh;     
+                    border-radius: 8px;
+                    object-fit: cover;  
+                            
+                }
+               
+            }
+                      
+
+            .product-card-icon{
+                right: 0px;
+                align-self: flex-end;
+                margin: 0 0 10px;
+                cursor: pointer;
+                svg{
+                    stroke: $primary-text-color
+                }
+            }
+        }
+        .product-card:hover {
+            transform: scale(1.1);
+        }
+        
+    }
+
+    .furniture-section {
+        @extend .healthCare-section;
+       
+        .product-card{
+            background-color: $tertiary-color;
+            .product-card-icon{
+                svg{
+                    stroke: $primary-color;
+                }
+            }
+
+            .product-card-info{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+.about-us-section{    
+    .earth{
+        @include flexCenter(column,center ,center );
+        margin-top: 50px;
+        height: auto;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        p{
+            width: 180px;
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            text-align: center;
+            padding: 10px;
+            color: #E86424;
+        }
+    }
+
+    .innovation{
+        @extend .earth;
+        margin-bottom: 40px;
+    }
+}
+
+.gallery-img-container{
+    @include flexCenter(column,center,center );
+    row-gap: 30px;
+    flex-wrap: wrap;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+         transition: transform 0.2s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+
+} 
+    
+
+
+.location-section{
+    height: 50vh;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color:$quaternoon-color;
+    img{
+        width: 100%;
+        min-width: 250px;
+        height: 30vh;
+        object-fit: cover;
+    }
+}
+
+footer{
+    background-color: $quaternoon-color;
+    width: 100%;
+    height: 300px;
+    color: $primary-color;
+   
+
+    .footer-section{
+        @include flexCenter(column,space-between ,inherit );
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: $max-width;
+        min-width: 320px;
+        margin: 0 auto;
+        
+        h3{
+        
+            font-style: normal;
+            font-weight: 500;
+            font-size: 3.0rem;
+            line-height: 3.9rem;
+    
+        }
+       
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li a{
+                color: $primary-color;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+        }
+    
+        .socialMedia-section{
+            @include flexCenter(row,center ,center );
+            img{
+                height: 25px;
+                width: 25px;
+                padding: 10px;
+            }
+        }
+    }
+
+  
+}

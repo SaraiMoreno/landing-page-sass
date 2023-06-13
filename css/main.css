@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: inherit;
+}
+
+nav {
+  height: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav span {
+  margin-left: 20px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #7C6A0A;
+}
+nav .icons {
+  display: flex;
+  justify-content: end;
+}
+nav .icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav .icons button svg {
+  stroke: #7C6A0A;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7C6A0A;
+  margin: 40px 0;
+}
+article .impact-section-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+article .impact-section-info h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+article .impact-section-info p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+article .impact-section-info button {
+  width: 150px;
+  background: #FA9500;
+  padding: 12px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 35px;
+  align-self: center;
+  transition: transform 0.2s;
+}
+article .impact-section-info button:hover {
+  transform: scale(1.1);
+}
+article .impact-section-image {
+  order: -1;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+}
+article .impact-section-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+/** fin article*/
+section h2 {
+  color: #7C6A0A;
+  font-size: 2.2rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+}
+section .healthCare-section, section .furniture-section {
+  width: 100%;
+  min-width: 300px;
+}
+section .healthCare-section .card-section, section .furniture-section .card-section {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+  align-items: inherit;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+section .healthCare-section .product-card, section .furniture-section .product-card {
+  width: 70%;
+  max-width: 178px;
+  min-width: 178px;
+  height: 320px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  background-color: #FFDAC6;
+  text-align: center;
+  padding: 4px;
+  scroll-snap-align: center;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  transition: transform 0.2s;
+}
+section .healthCare-section .product-card .product-card-info, section .furniture-section .product-card .product-card-info {
+  text-align: start;
+  padding: 0 20px;
+}
+section .healthCare-section .product-card .product-card-info img, section .furniture-section .product-card .product-card-info img {
+  width: 100%;
+  height: 35vh;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .healthCare-section .product-card .product-card-icon, section .furniture-section .product-card .product-card-icon {
+  right: 0px;
+  align-self: flex-end;
+  margin: 0 0 10px;
+  cursor: pointer;
+}
+section .healthCare-section .product-card .product-card-icon svg, section .furniture-section .product-card .product-card-icon svg {
+  stroke: #7C6A0A;
+}
+section .healthCare-section .product-card:hover, section .furniture-section .product-card:hover {
+  transform: scale(1.1);
+}
+section .furniture-section .product-card {
+  background-color: #BABD8D;
+}
+section .furniture-section .product-card .product-card-icon svg {
+  stroke: #FFEFE7;
+}
+section .furniture-section .product-card .product-card-info {
+  color: #FFEFE7;
+}
+
+.about-us-section .earth, .about-us-section .innovation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: auto;
+}
+.about-us-section .earth img, .about-us-section .innovation img {
+  width: 70px;
+  height: 70px;
+}
+.about-us-section .earth p, .about-us-section .innovation p {
+  width: 180px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  text-align: center;
+  padding: 10px;
+  color: #E86424;
+}
+.about-us-section .innovation {
+  margin-bottom: 40px;
+}
+
+.gallery-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+.gallery-img-container img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.gallery-img-container img:hover {
+  transform: scale(1.1);
+}
+
+.location-section {
+  height: 50vh;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #FA9500;
+}
+.location-section img {
+  width: 100%;
+  min-width: 250px;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #FA9500;
+  width: 100%;
+  height: 300px;
+  color: #FFEFE7;
+}
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+footer .footer-section h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.9rem;
+}
+footer .footer-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-section ul li a {
+  color: #FFEFE7;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+footer .footer-section .socialMedia-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-section .socialMedia-section img {
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

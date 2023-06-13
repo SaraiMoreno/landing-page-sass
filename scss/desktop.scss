@@ -1,0 +1,115 @@
+
+
+.impact-section-container{
+    height: 80vh;
+    flex-direction: row;
+
+
+    .impact-section-info{   
+            order: -1;
+            width: 50%;
+            height: 100%;
+            margin-right: 16px;
+             
+            h1{
+               font-size: 4rem; 
+            }
+            p{
+                font-size: 2.5rem;
+                line-height: 3.2rem;
+            }
+            button{
+                align-self: inherit;
+                font-size: 2.2rem;
+            }
+        
+    }
+
+    .impact-section-image {
+            order: 0;
+            width: 50%;
+            height: 100%;
+            text-align: right;
+        img{
+            height: 100%;
+        }
+    }
+
+    .impact-section-container{
+        flex-direction: row;
+    }
+       
+}
+section{
+
+    h2{
+        font-size: 3rem;
+    }
+    .healthCare-section{
+        .card-section{
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;  
+            overflow: inherit;
+            .product-card{
+                max-width :320px ;
+                min-width: 320px;
+                height: 420px;
+                .product-card-info{
+                    img{
+                        height:40vh;               
+                    }
+                }
+            }
+        }
+    }
+    .furniture-section {
+        @extend .healthCare-section;
+    }
+}
+
+.about-us-section{
+    height: 35vh;
+    .earth{
+        flex-direction: row;
+        height: 160px;
+        margin-top: 5px;
+        img{
+            height: 130px;
+            width: 130px;
+        }
+        p{
+            font-size: 1.7rem;
+            line-height: 3rem;
+        }
+    }
+    .about-us-section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+    }
+
+    .innovation{
+        @extend .earth;
+    }
+}
+
+.gallery-img-container{
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    img{
+        height: 340px;
+        width:  340px;
+    }
+}
+
+.location-section{
+    height: auto;
+    img{
+        height: 320px;
+    }
+}

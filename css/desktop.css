@@ -1,0 +1,91 @@
+.impact-section-container {
+  height: 80vh;
+  flex-direction: row;
+}
+.impact-section-container .impact-section-info {
+  order: -1;
+  width: 50%;
+  height: 100%;
+  margin-right: 16px;
+}
+.impact-section-container .impact-section-info h1 {
+  font-size: 4rem;
+}
+.impact-section-container .impact-section-info p {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+.impact-section-container .impact-section-info button {
+  align-self: inherit;
+  font-size: 2.2rem;
+}
+.impact-section-container .impact-section-image {
+  order: 0;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+.impact-section-container .impact-section-image img {
+  height: 100%;
+}
+.impact-section-container .impact-section-container {
+  flex-direction: row;
+}
+
+section h2 {
+  font-size: 3rem;
+}
+section .healthCare-section .card-section, section .furniture-section .card-section {
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  overflow: inherit;
+}
+section .healthCare-section .card-section .product-card, section .furniture-section .card-section .product-card {
+  max-width: 320px;
+  min-width: 320px;
+  height: 420px;
+}
+section .healthCare-section .card-section .product-card .product-card-info img, section .furniture-section .card-section .product-card .product-card-info img {
+  height: 40vh;
+}
+.about-us-section {
+  height: 35vh;
+}
+.about-us-section .earth, .about-us-section .innovation {
+  flex-direction: row;
+  height: 160px;
+  margin-top: 5px;
+}
+.about-us-section .earth img, .about-us-section .innovation img {
+  height: 130px;
+  width: 130px;
+}
+.about-us-section .earth p, .about-us-section .innovation p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.about-us-section .about-us-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.gallery-img-container {
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.gallery-img-container img {
+  height: 340px;
+  width: 340px;
+}
+
+.location-section {
+  height: auto;
+}
+.location-section img {
+  height: 320px;
+}/*# sourceMappingURL=desktop.css.map */
