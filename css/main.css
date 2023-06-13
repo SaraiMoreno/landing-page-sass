@@ -279,6 +279,7 @@ footer .footer-section .socialMedia-section img {
   width: 25px;
   padding: 10px;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 footer .footer-section .socialMedia-section img:hover {
   transform: scale(1.5);
