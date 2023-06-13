@@ -310,6 +310,10 @@ footer{
                 height: 25px;
                 width: 25px;
                 padding: 10px;
+                transition: transform 0.2s;
+            }
+            img:hover {
+                transform: scale(1.5);
             }
         }
     }

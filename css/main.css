@@ -278,4 +278,8 @@ footer .footer-section .socialMedia-section img {
   height: 25px;
   width: 25px;
   padding: 10px;
+  transition: transform 0.2s;
+}
+footer .footer-section .socialMedia-section img:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=main.css.map */
