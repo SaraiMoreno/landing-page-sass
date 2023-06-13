@@ -47,7 +47,7 @@ section .healthCare-section .card-section .product-card, section .furniture-sect
   height: 420px;
 }
 section .healthCare-section .card-section .product-card .product-card-info img, section .furniture-section .card-section .product-card .product-card-info img {
-  height: 40vh;
+  height: 300px;
 }
 .about-us-section {
   height: 35vh;

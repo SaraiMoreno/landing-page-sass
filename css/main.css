@@ -12,7 +12,7 @@ html {
 
 .main-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1470px;
   min-width: 320px;
   margin: 0 auto;
   padding: 20px;
@@ -118,8 +118,8 @@ section .healthCare-section .card-section, section .furniture-section .card-sect
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 15%;
+       column-gap: 15%;
 }
 section .healthCare-section .product-card, section .furniture-section .product-card {
   width: 70%;
@@ -141,10 +141,13 @@ section .healthCare-section .product-card, section .furniture-section .product-c
 section .healthCare-section .product-card .product-card-info, section .furniture-section .product-card .product-card-info {
   text-align: start;
   padding: 0 20px;
+  display: grid;
+  flex-direction: row;
+  grid-template-rows: 1fr auto auto;
 }
 section .healthCare-section .product-card .product-card-info img, section .furniture-section .product-card .product-card-info img {
   width: 100%;
-  height: 35vh;
+  height: 200px;
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -246,7 +249,7 @@ footer .footer-section {
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1470px;
   min-width: 320px;
   margin: 0 auto;
 }
